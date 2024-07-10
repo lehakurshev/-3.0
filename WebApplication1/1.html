@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление футболиста</title>
+</head>
+<body>
+    <h1>Добавление футболиста</h1>
+    <form action="/add_player" method="post">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select><br><br>
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="team">Название команды:</label>
+        <select id="team" name="team">
+            <!-- Здесь будет динамически подгружаться список команд -->
+        </select><br><br>
+        <label for="country">Страна:</label>
+        <select id="country" name="country">
+            <option value="Russia">Россия</option>
+            <option value="USA">США</option>
+            <option value="Italy">Италия</option>
+        </select><br><br>
+        <input type="submit" value="Добавить футболиста">
+    </form>
+</body>
+</html>
