@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Новая папка\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Npgsql" Version="8.0.3" />
   </ItemGroup>
 

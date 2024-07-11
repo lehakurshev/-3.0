@@ -1,18 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lehak\\Desktop\\WebApplication1\\",
+  "WorkspaceRootPath": "C:\\Users\\lehak\\-3.0\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\desktop\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\controllers\\createplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\createplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\desktop\\webapplication1\\webapplication1\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\desktop\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EDEF5015-9036-4BBC-9ACF-3A71310C6967}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\createplayer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\createplayer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\controllers\\viewplayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\viewplayerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\viewplayers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\viewplayers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|c:\\users\\lehak\\-3.0\\webapplication1\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C8807FD2-FCCC-4355-9649-9C1BE09727D0}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +90,248 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-10T11:17:11.786Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:07:18.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\CreatePlayer\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\CreatePlayer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\CreatePlayer\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\CreatePlayer\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:46:59.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Player.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Player.cs",
-              "ToolTip": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Player.cs",
-              "RelativeToolTip": "WebApplication1\\Player.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAoAAAA",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Models\\Player.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Player.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T09:09:11.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T14:28:53.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewPlayersController.cs",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\ViewPlayersController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\ViewPlayersController.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\ViewPlayersController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\ViewPlayersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T13:35:27.709Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\lehak\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAABFAAAA",
+              "Title": "CreatePlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\CreatePlayerController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\CreatePlayerController.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\CreatePlayerController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\CreatePlayerController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwCAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T09:04:32.786Z",
+              "WhenOpened": "2024-07-11T13:33:08.828Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:11:46.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T12:56:02.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:07:20.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:11:43.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\ViewPlayers\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\ViewPlayers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\ViewPlayers\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\ViewPlayers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T14:05:11.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:07:00.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:06:56.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T13:00:41.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-11T12:55:36.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T12:54:43.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-11T13:11:49.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-11T12:53:45.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-11T12:53:52.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-11T12:50:58.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WebApplication1.csproj",
+              "DocumentMoniker": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
+              "ToolTip": "C:\\Users\\lehak\\-3.0\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-11T12:50:43.887Z"
             }
           ]
         }
