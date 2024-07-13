@@ -1,0 +1,33 @@
+﻿@model Player
+@{
+    ViewData["Title"] = "Изменение игрока";
+}
+
+<header>Изменение игрока</header>
+
+<form method="post" asp-controller="ChangePlayer" asp-action="UpdatePlayer">
+
+    <input type="hidden" asp-for="Id" />
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+
+    <label asp-for="Surname"></label>
+    <input asp-for="Surname" />
+
+    <label asp-for="TeamName"></label>
+    <input asp-for="TeamName" />
+
+    <label asp-for="Gender"></label>
+    <input asp-for="Gender" />
+
+    <label asp-for="DateOfBirth"></label>
+    <input asp-for="DateOfBirth" />
+
+    <label asp-for="Country"></label>
+    <input asp-for="Country" />
+
+
+    <input type="submit" value="Изменить" />
+
+</form>

@@ -37,12 +37,7 @@ namespace WebApplication1.Controllers
             }
 
 
-                Console.WriteLine(player.Name);
-            Console.WriteLine(player.Surname);
-            Console.WriteLine(player.TeamName);
-            Console.WriteLine(player.Gender);
-            Console.WriteLine(player.Country);
-            Console.WriteLine(player.DateOfBirth);
+            
             return Redirect("/viewPlayers");
         }
     }

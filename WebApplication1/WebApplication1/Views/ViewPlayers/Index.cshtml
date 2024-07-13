@@ -1,5 +1,14 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Список футболистов";
 }
 
 <header>Список футболистов</header>
+
+@foreach (var footballer in ViewBag.Footballers)
+{
+    <a asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@footballer">
+        <h1>@footballer</h1>
+        <input type="submit" value="изменить" />
+    </a>
+} 
