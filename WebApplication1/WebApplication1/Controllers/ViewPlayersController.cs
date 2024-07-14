@@ -15,6 +15,8 @@ namespace WebApplication1.Controllers
             List<string> dateOfBirths = new List<string>();
             List<string> countrys = new List<string>();
 
+            List<Player> players = new List<Player>();
+
             string connString = "PORT=5432;DATABASE=football players;HOST=localhost;USER ID=postgres;PASSWORD=postgres";
 
             using (var conn = new NpgsqlConnection(connString))
@@ -36,14 +38,19 @@ namespace WebApplication1.Controllers
                             DateTime dateOfBirth = reader.GetDateTime(5);
                             string country = reader.GetString(6); // Преобразуем в строку
 
-                            /*Console.WriteLine($"ID: {id}");
-                            Console.WriteLine($"Имя: {name}");
-                            Console.WriteLine($"Фамилия: {surname}");
-                            Console.WriteLine($"Команда: {teamName}");
-                            Console.WriteLine($"Пол: {gender}");
-                            Console.WriteLine($"Дата рождения: {dateOfBirth}");
-                            Console.WriteLine($"Страна: {country}");
-                            Console.WriteLine("-------");*/
+                            var player = new Player();
+
+                            player.Id = id;
+                            player.Name = name;
+                            player.Surname = surname;
+                            player.TeamName = teamName;
+                            player.Gender = gender;
+                            player.DateOfBirth = dateOfBirth;
+                            player.Country = country;
+
+
+
+                            players.Add(player);
                         }
                     }
                 }
@@ -53,14 +60,8 @@ namespace WebApplication1.Controllers
 
 
 
-            List<string> footballers = new List<string>();
-
-            for (int i = 1; i <= 100; i++)
-            {
-                footballers.Add(i.ToString());
-            }
-
-            ViewBag.Footballers = footballers;
+            
+            ViewBag.Players = players;
 
             return View();
         }

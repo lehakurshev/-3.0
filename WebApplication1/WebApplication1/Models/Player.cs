@@ -26,11 +26,10 @@ namespace WebApplication1.Models
         public string Surname { get; set; }
         public string TeamName { get; set; }
         public string Gender { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateOfBirth { get; set; }
         public string Country { get; set; }
     }
-
-    
-
-
 }

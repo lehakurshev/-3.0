@@ -8,24 +8,36 @@
 <form method="post" asp-controller="CreatePlayer" asp-action="AddPlayer">
 
     <label asp-for="Name"></label>
-    <input asp-for="Name"/>
+    <input asp-for="Name" />
 
     <label asp-for="Surname"></label>
-    <input asp-for="Surname"/>
-
+    <input asp-for="Surname" />
+    
     <label asp-for="TeamName"></label>
-    <input asp-for="TeamName"/>
+    <input asp-for="TeamName" list="teamOptions" id="comboInput" placeholder="Выберите из списка или введите своё значение...">
+    <datalist id="teamOptions">
+        @foreach (var teamName in ViewBag.TeamNames)
+        {
+            <option value="@teamName"></option>
+        }
+    </datalist>
 
     <label asp-for="Gender"></label>
-    <input asp-for="Gender"/>
+    <select asp-for="Gender">
+        <option value="Man">Man</option>
+        <option value="Woman">Woman</option>
+    </select>
 
     <label asp-for="DateOfBirth"></label>
-    <input asp-for="DateOfBirth"/>
+    <input asp-for="DateOfBirth" type="date" />
 
     <label asp-for="Country"></label>
-    <input asp-for="Country"/>
+    <select asp-for="Country">
+        <option value="Russia">Russia</option>
+        <option value="USA">USA</option>
+        <option value="Italy">Italy</option>
+    </select>
 
-    
     <input type="submit" value="отправить" />
 
 </form>

@@ -1,14 +1,26 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Список футболистов";
 }
 
 <header>Список футболистов</header>
+@* 
+    хочется чтобы игроки выводились в обратном порядке т.е сначала те кого мы создали
+ *@
+@{
+    var players = (List<Player>)ViewBag.Players;
+    players.Reverse();
+}
 
-@foreach (var footballer in ViewBag.Footballers)
+@foreach (Player player in players)
 {
-    <a asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@footballer">
-        <h1>@footballer</h1>
-        <input type="submit" value="изменить" />
-    </a>
-} 
+    <div>
+        <h1>@player.Name @player.Surname</h1>
+        <p>Пол: @player.Gender</p>
+        <p>Команда: @player.TeamName</p>
+        <p>Дата рождения: @player.DateOfBirth</p>
+        <p>Страна: @player.Country</p>
+        <form asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@player.Id">
+            <input type="submit" value="Изменить" />
+        </form>
+    </div>
+}
