@@ -32,7 +32,7 @@ namespace WebApplication1.Controllers
         public IActionResult UpdatePlayer(Player player)
         {
             var request = "UPDATE easy_player SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
-            DBfunctions.MakeARequestToTheDB2(request, player);
+            DBfunctions.MakeARequestToTheDB3(request, player);
 
 
 
