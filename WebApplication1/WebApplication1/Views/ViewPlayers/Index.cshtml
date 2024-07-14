@@ -13,14 +13,18 @@
 
 @foreach (Player player in players)
 {
-    <div>
-        <h1>@player.Name @player.Surname</h1>
-        <p>Пол: @player.Gender</p>
-        <p>Команда: @player.TeamName</p>
-        <p>Дата рождения: @player.DateOfBirth</p>
-        <p>Страна: @player.Country</p>
+    
+        
         <form asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@player.Id">
+            <h1>@player.Name @player.Surname</h1>
+            <p>Пол: @player.Gender</p>
+            <p>Команда: @player.TeamName</p>
+            <p>Дата рождения: @player.DateOfBirth</p>
+            <p>Страна: @player.Country</p>
+
             <input type="submit" value="Изменить" />
         </form>
-    </div>
+
+        
+    
 }

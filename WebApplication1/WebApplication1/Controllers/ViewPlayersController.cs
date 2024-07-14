@@ -18,7 +18,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult ChangePlayer(string id)
         {
-            //Console.WriteLine(id);
+
             return Redirect($"/ChangePlayer/Player?playerId={int.Parse(id)}");
         }
     }
