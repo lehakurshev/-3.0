@@ -31,12 +31,18 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult UpdatePlayer(Player player)
         {
-            var request = "UPDATE easy_player SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
-            DBfunctions.MakeARequestToTheDB3(request, player);
+            if (ModelState.IsValid)
+            {
+                var request = "UPDATE easy_player SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
+                DBfunctions.MakeARequestToTheDB3(request, player);
 
 
 
-            return Redirect("/viewPlayers");
+                return Redirect("/viewPlayers");
+            }
+
+            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB1("SELECT DISTINCT team_name FROM easy_player");
+            return View("Player");
         }
 
 

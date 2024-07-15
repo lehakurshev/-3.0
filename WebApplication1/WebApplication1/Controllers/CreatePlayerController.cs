@@ -10,6 +10,7 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
+            Console.WriteLine(1);
 
             ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB4("SELECT DISTINCT team_name FROM easy_player");
 
@@ -20,15 +21,34 @@ namespace WebApplication1.Controllers
         public IActionResult AddPlayer(Player player)
         {
 
+            if (ModelState.IsValid)
+            {
 
-            var request = "INSERT INTO easy_player (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
+                
 
-            DBfunctions.MakeARequestToTheDB5(request, player);
+                var request = "INSERT INTO easy_player (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
+
+                DBfunctions.MakeARequestToTheDB5(request, player);
 
 
 
 
-            return Redirect("/viewPlayers");
+                return Redirect("/viewPlayers");
+            }
+
+            
+
+            Console.WriteLine(player.DateOfBirth);
+
+
+            // пчему-то то что внутри Index не вызывается....
+            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB4("SELECT DISTINCT team_name FROM easy_player");
+
+            return View("Index");
+
+            
+
+            
         }
     }
 }

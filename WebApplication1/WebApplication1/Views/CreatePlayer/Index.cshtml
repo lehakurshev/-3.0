@@ -3,18 +3,23 @@
     ViewData["Title"] = "Создание игрока";
 }
 
-<header>Создание игрока</header>
+@* <header>Создание игрока</header> *@
 
 <form method="post" asp-controller="CreatePlayer" asp-action="AddPlayer">
 
-    <label asp-for="Name"></label>
+    <label asp-for="Name" class="required"></label>
     <input asp-for="Name" />
+    @* <input asp-for="Name" required/> возможно так лучше и проще*@
 
-    <label asp-for="Surname"></label>
+    <span asp-validation-for="Name"></span>
+
+    <label asp-for="Surname" class="required"></label>
     <input asp-for="Surname" />
+    <span asp-validation-for="Surname"></span>
     
-    <label asp-for="TeamName"></label>
+    <label asp-for="TeamName" class="required"></label>
     <input asp-for="TeamName" list="teamOptions" id="comboInput" placeholder="Выберите из списка или введите своё значение...">
+    <span asp-validation-for="TeamName"></span>
     <datalist id="teamOptions">
         @foreach (var teamName in ViewBag.TeamNames)
         {
@@ -22,21 +27,24 @@
         }
     </datalist>
 
-    <label asp-for="Gender"></label>
+    <label asp-for="Gender" class="required"></label>
     <select asp-for="Gender">
         <option value="Man">Man</option>
         <option value="Woman">Woman</option>
     </select>
+    <span asp-validation-for="Gender"></span>
 
-    <label asp-for="DateOfBirth"></label>
+    <label asp-for="DateOfBirth" class="required"></label>
     <input asp-for="DateOfBirth" type="date" />
+    <span asp-validation-for="DateOfBirth"></span>
 
-    <label asp-for="Country"></label>
+    <label asp-for="Country" class="required"></label>
     <select asp-for="Country">
         <option value="Russia">Russia</option>
         <option value="USA">USA</option>
         <option value="Italy">Italy</option>
     </select>
+    <span asp-validation-for="Country"></span>
 
     <input type="submit" value="отправить" />
 
