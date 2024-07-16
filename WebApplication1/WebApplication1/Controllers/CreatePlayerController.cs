@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
         {
             Console.WriteLine(1);
 
-            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB4("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
 
             return View();
         }
@@ -28,7 +28,7 @@ namespace WebApplication1.Controllers
 
                 var request = "INSERT INTO easy_player (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
 
-                DBfunctions.MakeARequestToTheDB5(request, player);
+                DBfunctions.UpdatePlayerDataWithOutId(request, player);
 
 
 
@@ -42,7 +42,7 @@ namespace WebApplication1.Controllers
 
 
             // пчему-то то что внутри Index не вызывается....
-            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB4("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
 
             return View("Index");
 

@@ -13,10 +13,10 @@ namespace WebApplication1.Controllers
         public IActionResult Player(int playerId)
         {
 
-            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB1("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
 
 
-            return View(DBfunctions.MakeARequestToTheDB2("SELECT * FROM easy_player WHERE id = @playerId", playerId));
+            return View(DBfunctions.GetPlayerById("SELECT * FROM easy_player WHERE id = @playerId", playerId));
         }
 
 
@@ -34,14 +34,14 @@ namespace WebApplication1.Controllers
             if (ModelState.IsValid)
             {
                 var request = "UPDATE easy_player SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
-                DBfunctions.MakeARequestToTheDB3(request, player);
+                DBfunctions.UpdatePlayerDataWithId(request, player);
 
 
 
                 return Redirect("/viewPlayers");
             }
 
-            ViewBag.TeamNames = DBfunctions.MakeARequestToTheDB1("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
             return View("Player");
         }
 

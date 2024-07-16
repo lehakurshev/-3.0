@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Player
+@{
     ViewData["Title"] = "Список футболистов";
 }
 
@@ -19,7 +20,7 @@
             <h1>@player.Name @player.Surname</h1>
             <p>Пол: @player.Gender</p>
             <p>Команда: @player.TeamName</p>
-            <p>Дата рождения: @player.DateOfBirth</p>
+            <p>Дата рождения: @player.DateOfBirth.ToString("dd.MM.yyyy")</p>
             <p>Страна: @player.Country</p>
 
             <input type="submit" value="Изменить" />

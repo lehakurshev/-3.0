@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
         {
 
             
-            ViewBag.Players = DBfunctions.MakeARequestToTheDB6("SELECT * FROM easy_player");
+            ViewBag.Players = DBfunctions.GetPlayers("SELECT * FROM easy_player");
 
             return View();
         }

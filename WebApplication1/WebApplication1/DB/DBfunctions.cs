@@ -33,28 +33,13 @@ public static class DBfunctions
         }
         catch (Exception ex)
         {
-            // Handle exceptions (log, throw, etc.)
+            // exceptions 
         }
     }
 
-    public static object MakeARequestToTheDB1(string request)
-    {
-        var teamNames = new List<string>();
+    
 
-        ExecuteDBRequest(request,
-            command => { },
-            reader =>
-            {
-                while (reader.Read())
-                {
-                    teamNames.Add(reader.GetString(0));
-                }
-            });
-
-        return teamNames;
-    }
-
-    public static object MakeARequestToTheDB2(string request, int playerId)
+    public static object GetPlayerById(string request, int playerId)
     {
         var player = new Player();
 
@@ -77,23 +62,10 @@ public static class DBfunctions
         return player;
     }
 
-    public static void MakeARequestToTheDB3(string request, Player player)
-    {
-        ExecuteDBRequest(request,
-            command =>
-            {
-                command.Parameters.AddWithValue("@Name", player.Name);
-                command.Parameters.AddWithValue("@Surname", player.Surname);
-                command.Parameters.AddWithValue("@TeamName", player.TeamName);
-                command.Parameters.AddWithValue("@Gender", player.Gender.ToString());
-                command.Parameters.AddWithValue("@DateOfBirth", player.DateOfBirth);
-                command.Parameters.AddWithValue("@Country", player.Country.ToString());
-                command.Parameters.AddWithValue("@PlayerId", player.Id);
-            },
-            reader => { });
-    }
+    
 
-    public static object MakeARequestToTheDB4(string request)
+
+    public static object GetTeamNames(string request) // GetTeamNames("SELECT DISTINCT team_name FROM easy_player")
     {
         var teamNames = new List<string>();
 
@@ -110,7 +82,7 @@ public static class DBfunctions
         return teamNames;
     }
 
-    public static void MakeARequestToTheDB5(string request, Player player)
+    public static void UpdatePlayerDataWithOutId(string request, Player player)
     {
         ExecuteDBRequest(request,
             command =>
@@ -125,7 +97,23 @@ public static class DBfunctions
             reader => { });
     }
 
-    public static object MakeARequestToTheDB6(string request)
+    public static void UpdatePlayerDataWithId(string request, Player player)
+    {
+        ExecuteDBRequest(request,
+            command =>
+            {
+                command.Parameters.AddWithValue("@Name", player.Name);
+                command.Parameters.AddWithValue("@Surname", player.Surname);
+                command.Parameters.AddWithValue("@TeamName", player.TeamName);
+                command.Parameters.AddWithValue("@Gender", player.Gender.ToString());
+                command.Parameters.AddWithValue("@DateOfBirth", player.DateOfBirth);
+                command.Parameters.AddWithValue("@Country", player.Country.ToString());
+                command.Parameters.AddWithValue("@PlayerId", player.Id);
+            },
+            reader => { });
+    }
+
+    public static List<Player> GetPlayers(string request)
     {
         var players = new List<Player>();
 
@@ -158,8 +146,13 @@ public static class DBfunctions
                 }
             });
 
+        // Сортировка списка игроков по Id
+        players.Sort((p1, p2) => p1.Id.CompareTo(p2.Id));
+
         return players;
     }
+
+
 
 }
 

@@ -46,7 +46,11 @@ namespace WebApplication1.Models
         [DataType(DataType.Date, ErrorMessage = "Некорректный формат даты")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [PastDate(ErrorMessage = "Дата рождения не может быть из будущего")]
+        [Range(typeof(DateTime), "01/01/1900", "01/01/2100", ErrorMessage = "Некорректное значение даты рождения")]
+        [EmptyDate(ErrorMessage = "Поле 'Дата рождения' не может быть пустым")] // Добавляем атрибут EmptyDate
         public DateTime DateOfBirth { get; set; }
+
+
 
         [Display(Name = "Страна")]
         [Required(ErrorMessage = "Поле 'Страна' обязательно для заполнения")]
@@ -54,7 +58,7 @@ namespace WebApplication1.Models
         public string Country { get; set; }
 
 
-        public static List<string> TeamOptions = new List<string> { "1", "2", "3", "4" };
+        
     }
 
 
@@ -69,6 +73,15 @@ namespace WebApplication1.Models
                 return date <= DateTime.Now;
             }
             return false;
+        }
+    }
+
+    public class EmptyDateAttribute : ValidationAttribute
+    {
+        public override bool IsValid(object value)
+        {
+            // Проверяем, что значение не пусто и не равно null
+            return value != null && !string.IsNullOrEmpty(value.ToString());
         }
     }
 }
