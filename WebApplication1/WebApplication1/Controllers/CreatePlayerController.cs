@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
         {
             Console.WriteLine(1);
 
-            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames();
 
             return View();
         }
@@ -23,32 +23,17 @@ namespace WebApplication1.Controllers
 
             if (ModelState.IsValid)
             {
+                DBfunctions.UpdatePlayerData(player, includeId: false);
 
-                
-
-                var request = "INSERT INTO easy_player (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
-
-                DBfunctions.UpdatePlayerDataWithOutId(request, player);
-
-
-
-
-                return Redirect("/viewPlayers");
+                return Redirect("/viewPlayers?page=1");
             }
-
-            
 
             Console.WriteLine(player.DateOfBirth);
 
-
             // пчему-то то что внутри Index не вызывается....
-            ViewBag.TeamNames = DBfunctions.GetTeamNames("SELECT DISTINCT team_name FROM easy_player");
+            ViewBag.TeamNames = DBfunctions.GetTeamNames();
 
             return View("Index");
-
-            
-
-            
         }
     }
 }

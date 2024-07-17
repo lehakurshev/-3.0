@@ -1,0 +1,22 @@
+| Имя         | Фамилия     | Название команды     | Пол   | Дата Рождения | Страна |
+|-------------|-------------|----------------------|-------|---------------|--------|
+| Gianluigi   | Buffon      | Parma                | М     | 28 января 1978 | Италия |
+| Francesco   | Totti       | Roma                 | М     | 27 сентября 1976 | Италия |
+| Andrea      | Pirlo       | New York City FC     | М     | 19 мая 1979  | Италия |
+| Giorgio     | Chiellini   | Juventus             | М     | 14 августа 1984 | Италия |
+| Mario       | Balotelli   | Brescia              | М     | 12 августа 1990 | Италия |
+| Leonardo    | Bonucci     | Milan                | М     | 1 мая 1987  | Италия |
+| Fabio       | Cannavaro   | Guangzhou Evergrande | М     | 13 сентября 1973 | Италия |
+| Paolo       | Maldini     | Milan                | М     | 26 июня 1968 | Италия |
+| Landon      | Donovan     | Los Angeles Galaxy   | М     | 4 марта 1982 | США    |
+| Clint       | Dempsey     | Seattle Sounders     | М     | 9 марта 1983 | США    |
+| Christian   | Pulisic     | Chelsea              | М     | 18 сентября 1998 | США    |
+| Michael     | Bradley     | Toronto FC           | М     | 31 июля 1987 | США    |
+| Jozy        | Altidore    | Toronto FC           | М     | 6 ноября 1989 | США    |
+| Matt        | Miazga      | Alavés               | М     | 19 июля 1995 | США    |
+| Tim         | Howard      | Memphis 901 FC       | М     | 6 марта 1979 | США    |
+| Christian   | Vieri       | Retired              | М     | 12 июля 1973 | Италия |
+| Andrea      | Belotti     | Torino               | М     | 20 декабря 1993 | Италия |
+| Federico    | Chiesa      | Juventus             | М     | 25 октября 1997 | Италия |
+| Sebastian   | Giovinco    | Al-Hilal             | М     | 26 января 1987 | Италия |
+| Victor      | Osimhen     | Napoli               | М     | 29 декабря 1998 | Италия |

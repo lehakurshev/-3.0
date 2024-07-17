@@ -1,0 +1,34 @@
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\appsettings.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.staticwebassets.runtime.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.exe
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.deps.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.runtimeconfig.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.dll
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Каталог футболистов.pdb
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\bin\Debug\net8.0\Npgsql.dll
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.csproj.AssemblyReference.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.AssemblyInfoInputs.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.AssemblyInfo.cs
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.csproj.CoreCompileInputs.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.RazorAssemblyInfo.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.RazorAssemblyInfo.cs
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.sourcelink.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.Каталог футболистов.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.build.Каталог футболистов.props
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Каталог футболистов.props
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Каталог футболистов.props
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\scopedcss\bundle\Каталог футболистов.styles.css
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\scopedcss\projectbundle\Каталог футболистов.bundle.scp.css
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог .6813009D.Up2Date
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.dll
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\refint\Каталог футболистов.dll
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.pdb
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\Каталог футболистов.genruntimeconfig.cache
+C:\Users\lehak\-3.0\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\Каталог футболистов.dll

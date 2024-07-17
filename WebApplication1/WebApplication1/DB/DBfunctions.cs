@@ -10,7 +10,12 @@ public static class DBfunctions
 
     static DBfunctions()
     {
-        connString = "PORT=5432;DATABASE=football players;HOST=localhost;USER ID=postgres;PASSWORD=postgres";
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+        IConfigurationRoot configuration = builder.Build();
+        connString = configuration.GetConnectionString("DefaultConnection");
     }
 
     private static void ExecuteDBRequest(string request, Action<NpgsqlCommand> addParameters, Action<NpgsqlDataReader> readResult)
@@ -37,9 +42,36 @@ public static class DBfunctions
         }
     }
 
-    
+    // не удачно создалась таблица -> чтоб переместить объект в конец его приходится одалять и создавать заново... потом надо исправить
+    public static void UpdatePlayerData(Player player, bool includeId = true, string requestDelete = Requests.RequestDeletePlayerData, string requestInsert = Requests.RequestInsertPlayerData)
+    {
+        // Удаление игрока
+        ExecuteDBRequest(requestDelete,
+            command =>
+            {
+                command.Parameters.AddWithValue("@PlayerId", player.Id);
+            },
+            reader => { });
 
-    public static object GetPlayerById(string request, int playerId)
+        // Вставка обновленного игрока
+        ExecuteDBRequest(requestInsert,
+            command =>
+            {
+                command.Parameters.AddWithValue("@Name", player.Name);
+                command.Parameters.AddWithValue("@Surname", player.Surname);
+                command.Parameters.AddWithValue("@TeamName", player.TeamName);
+                command.Parameters.AddWithValue("@Gender", player.Gender.ToString());
+                command.Parameters.AddWithValue("@DateOfBirth", player.DateOfBirth);
+                command.Parameters.AddWithValue("@Country", player.Country.ToString());
+                if (includeId)
+                {
+                    command.Parameters.AddWithValue("@PlayerId", player.Id);
+                }
+            },
+            reader => { });
+    }
+
+    public static object GetPlayerById(int playerId, string request = Requests.RequestGetPlayerById)
     {
         var player = new Player();
 
@@ -65,7 +97,7 @@ public static class DBfunctions
     
 
 
-    public static object GetTeamNames(string request) // GetTeamNames("SELECT DISTINCT team_name FROM easy_player")
+    public static object GetTeamNames(string request = Requests.RequestGetTeamNames) // GetTeamNames("SELECT DISTINCT team_name FROM easy_player")
     {
         var teamNames = new List<string>();
 
@@ -82,38 +114,11 @@ public static class DBfunctions
         return teamNames;
     }
 
-    public static void UpdatePlayerDataWithOutId(string request, Player player)
-    {
-        ExecuteDBRequest(request,
-            command =>
-            {
-                command.Parameters.AddWithValue("@Name", player.Name);
-                command.Parameters.AddWithValue("@Surname", player.Surname);
-                command.Parameters.AddWithValue("@TeamName", player.TeamName);
-                command.Parameters.AddWithValue("@Gender", player.Gender.ToString());
-                command.Parameters.AddWithValue("@DateOfBirth", player.DateOfBirth);
-                command.Parameters.AddWithValue("@Country", player.Country.ToString());
-            },
-            reader => { });
-    }
+    
 
-    public static void UpdatePlayerDataWithId(string request, Player player)
-    {
-        ExecuteDBRequest(request,
-            command =>
-            {
-                command.Parameters.AddWithValue("@Name", player.Name);
-                command.Parameters.AddWithValue("@Surname", player.Surname);
-                command.Parameters.AddWithValue("@TeamName", player.TeamName);
-                command.Parameters.AddWithValue("@Gender", player.Gender.ToString());
-                command.Parameters.AddWithValue("@DateOfBirth", player.DateOfBirth);
-                command.Parameters.AddWithValue("@Country", player.Country.ToString());
-                command.Parameters.AddWithValue("@PlayerId", player.Id);
-            },
-            reader => { });
-    }
 
-    public static List<Player> GetPlayers(string request)
+
+    public static List<Player> GetPlayers(string request = Requests.RequestGetPlayers)
     {
         var players = new List<Player>();
 
@@ -156,3 +161,18 @@ public static class DBfunctions
 
 }
 
+public static class Requests
+{
+    // чтоб не переписывать для новой таблицы
+    public const string Table = "players";
+
+    public const string RequestGetPlayerById = $"SELECT * FROM {Table} WHERE id = @playerId";
+    public const string RequestGetTeamNames = $"SELECT DISTINCT team_name FROM {Table}";
+    public const string RequestGetPlayers = $"SELECT * FROM {Table}";
+
+    //public const string RequestUpdatePlayerData = $"UPDATE {Table} SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
+
+    public const string RequestDeletePlayerData = $"DELETE FROM {Table} WHERE id = @PlayerId";
+    public const string RequestInsertPlayerData = $"INSERT INTO {Table} (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
+
+}

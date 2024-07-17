@@ -19,7 +19,7 @@ namespace WebApplication1.Models
     public class Player
     {
         [Display(Name = "Имя")]
-        [Required(ErrorMessage = "Поле 'Фамилия' обязательно для заполнения")]
+        [Required(ErrorMessage = "Поле 'Имя' обязательно для заполнения")]
         [StringLength(50, ErrorMessage = "Имя должно содержать не более 50 символов")]
         public string Name { get; set; }
 
@@ -57,8 +57,7 @@ namespace WebApplication1.Models
         [StringLength(50, ErrorMessage = "Страна должна содержать не более 50 символов")]
         public string Country { get; set; }
 
-
-        
+        public  int curentPage = 1;
     }
 
 

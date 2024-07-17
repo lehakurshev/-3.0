@@ -8,24 +8,67 @@
     хочется чтобы игроки выводились в обратном порядке т.е сначала те кого мы создали
  *@
 @{
-    var players = (List<Player>)ViewBag.Players;
+    List<Player> players = ViewBag.Players;
     players.Reverse();
+
+    var curentPage = ViewBag.curentPage;
+    var length = Math.Min(players.Count, 10 * curentPage);
 }
 
-@foreach (Player player in players)
-{
-    
-        
-        <form asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@player.Id">
-            <h1>@player.Name @player.Surname</h1>
-            <p>Пол: @player.Gender</p>
-            <p>Команда: @player.TeamName</p>
-            <p>Дата рождения: @player.DateOfBirth.ToString("dd.MM.yyyy")</p>
-            <p>Страна: @player.Country</p>
-
-            <input type="submit" value="Изменить" />
-        </form>
+<div class="card-container">
+    @for (var i = 10 * (curentPage - 1); i < length; i++)
+    {
 
         
-    
-}
+         var player = players[i];
+        
+        <div class="card">
+            <div class="card-body">
+                <form asp-controller="ViewPlayers" asp-action="ChangePlayer" asp-route-id="@player.Id">
+                    <h5 class="card-title">@player.Name @player.Surname</h5>
+                    <p class="card-text">Пол: @player.Gender</p>
+                    <p class="card-text">Команда: @player.TeamName</p>
+                    <p class="card-text">Дата рождения: @player.DateOfBirth.ToString("dd.MM.yyyy")</p>
+                    <p class="card-text">Страна: @player.Country</p>
+                
+                    <input type="submit" value="Изменить" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+@* 
+    Пока заглушка
+ *@
+
+
+<div class="pagination">
+    @for (int i = 1; i <= players.Count/10 + 1; i++)
+    {
+        if (i == curentPage)
+        {
+            <span class="page-link active">@i</span>
+        }
+        else if (i == 1 || i == players.Count / 10)
+        {
+            <form asp-controller="ViewPlayers" asp-action="GoToThePage" asp-route-page="@i">
+                <input type="hidden" name="pageNumber" value="@i" />
+                <button type="submit" class="page-link">@i</button>
+            </form>
+        }
+    }
+    <input class="page-input" type="number" id="pageNumber" min="1" max="2" />
+    <button class="go-btn" onclick="goToPage(document.getElementById('pageNumber').value)">Перейти</button>
+</div>
+
+
+<style>
+    form {
+        max-width: 400px;
+        margin: 0;
+    }
+</style>
