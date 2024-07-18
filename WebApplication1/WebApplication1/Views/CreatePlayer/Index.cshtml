@@ -27,24 +27,24 @@
         }
     </datalist>
 
-    <label asp-for="Gender" class="required"></label>
-    <select asp-for="Gender">
+        <label asp-for="GenderString" class="required"></label>
+        <select asp-for="GenderString">
         <option value="Man">Man</option>
         <option value="Woman">Woman</option>
     </select>
-    <span asp-validation-for="Gender"></span>
+        <span asp-validation-for="GenderString"></span>
 
     <label asp-for="DateOfBirth" class="required"></label>
     <input asp-for="DateOfBirth" type="date" />
     <span asp-validation-for="DateOfBirth"></span>
 
-    <label asp-for="Country" class="required"></label>
-    <select asp-for="Country">
+        <label asp-for="CountryString" class="required"></label>
+        <select asp-for="CountryString">
         <option value="Russia">Russia</option>
         <option value="USA">USA</option>
         <option value="Italy">Italy</option>
     </select>
-    <span asp-validation-for="Country"></span>
+        <span asp-validation-for="CountryString"></span>
 
     <input type="submit" value="отправить" />
 

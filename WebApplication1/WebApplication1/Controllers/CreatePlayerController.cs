@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
     {
         public IActionResult Index()
         {
-            Console.WriteLine(1);
+            
 
             ViewBag.TeamNames = DBfunctions.GetTeamNames();
 
@@ -28,9 +28,9 @@ namespace WebApplication1.Controllers
                 return Redirect("/viewPlayers?page=1");
             }
 
-            Console.WriteLine(player.DateOfBirth);
+            
 
-            // пчему-то то что внутри Index не вызывается....
+            // пчему-то то внутри Index не вызывается....
             ViewBag.TeamNames = DBfunctions.GetTeamNames();
 
             return View("Index");

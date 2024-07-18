@@ -85,9 +85,9 @@ public static class DBfunctions
                     player.Name = reader.GetString(1);
                     player.Surname = reader.GetString(2);
                     player.TeamName = reader.GetString(3);
-                    player.Gender = reader.GetString(4);
+                    player.Gender = (Gender)Enum.Parse(typeof(Gender), reader.GetString(4));
                     player.DateOfBirth = reader.GetDateTime(5);
-                    player.Country = reader.GetString(6);
+                    player.Country = (Country)Enum.Parse(typeof(Country), reader.GetString(6));
                 }
             });
 
@@ -142,9 +142,9 @@ public static class DBfunctions
                         Name = name,
                         Surname = surname,
                         TeamName = teamName,
-                        Gender = gender,
+                        Gender = (Gender)Enum.Parse(typeof(Gender), gender),
                         DateOfBirth = dateOfBirth,
-                        Country = country
+                        Country = (Country)Enum.Parse(typeof(Country), country)
                     };
 
                     players.Add(player);
@@ -170,8 +170,7 @@ public static class Requests
     public const string RequestGetTeamNames = $"SELECT DISTINCT team_name FROM {Table}";
     public const string RequestGetPlayers = $"SELECT * FROM {Table}";
 
-    //public const string RequestUpdatePlayerData = $"UPDATE {Table} SET name = @Name, surname = @Surname, team_name = @TeamName, gender = @Gender, date_of_birth = @DateOfBirth, country = @Country WHERE id = @PlayerId";
-
+    
     public const string RequestDeletePlayerData = $"DELETE FROM {Table} WHERE id = @PlayerId";
     public const string RequestInsertPlayerData = $"INSERT INTO {Table} (name, surname, team_name, gender, date_of_birth, country) VALUES (@Name, @Surname, @TeamName, @Gender, @DateOfBirth, @Country)";
 

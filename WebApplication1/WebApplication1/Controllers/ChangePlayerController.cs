@@ -16,12 +16,6 @@ namespace WebApplication1.Controllers
             return View(DBfunctions.GetPlayerById(playerId));
         }
 
-        public IActionResult Index(int playerId)
-        {
-            Console.WriteLine(111);
-            return View();
-        }
-
         [HttpPost]
         public IActionResult UpdatePlayer(Player player)
         {

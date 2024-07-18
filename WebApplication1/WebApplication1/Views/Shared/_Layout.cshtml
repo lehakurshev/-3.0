@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Каталог Футболистов</title>
-    
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <style>
         body {
@@ -21,22 +22,25 @@
             margin-top: 10px;
         }
 
-            nav a {
-                margin: 0 10px;
-                text-decoration: none;
-                color: #333;
-                transition: color 0.3s; /* добавляем плавный переход цвета */
-            }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+            /* добавляем плавный переход цвета */
+        }
 
-                nav a:hover {
-                    color: blue; /* меняем цвет при наведении */
-                }
+        nav a:hover {
+            color: blue;
+            /* меняем цвет при наведении */
+        }
 
         main {
             padding: 20px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Football Players</h1>
@@ -49,4 +53,5 @@
         @RenderBody()
     </main>
 </body>
+
 </html>

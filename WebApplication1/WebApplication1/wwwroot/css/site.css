@@ -8,7 +8,11 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -52,14 +56,16 @@ label {
     color: #333;
 }
 
-    /* Стиль для обязательного поля */
-    label.required::after {
-        content: "*";
-        color: red;
-        margin-left: 5px;
-    }
+/* пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */
+label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
 
-input[type="text"], input[type="date"], select {
+input[type="text"],
+input[type="date"],
+select {
     width: 100%;
     padding: 8px;
     /*margin-bottom: 10px;*/
@@ -78,17 +84,14 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-    input[type="submit"]:hover {
-        background-color: #2554a8;
-    }
+input[type="submit"]:hover {
+    background-color: #2554a8;
+}
 
 datalist {
     margin-top: 10px;
 }
 
-/*#comboInput {
-    margin-bottom: 10px;
-}*/
 
 select {
     width: 100%;
@@ -106,20 +109,18 @@ h1 {
     text-align: center;
 }
 
-p {
-    margin: 5px 0;
+h2 {
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
 }
 
-/*div {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+
+p {
+    margin: 5px 0;
     text-align: center;
-    
-}*/
+}
+
 
 span {
     margin-top: 0;
@@ -164,9 +165,9 @@ span {
     cursor: pointer;
 }
 
-    .btn-primary:hover {
-        background-color: #0056b3;
-    }
+.btn-primary:hover {
+    background-color: #0056b3;
+}
 
 .pagination {
     margin-top: 20px;
@@ -184,10 +185,10 @@ span {
     cursor: pointer;
 }
 
-    .page-link.active {
-        background-color: #007bff;
-        color: white;
-    }
+.page-link.active {
+    background-color: #007bff;
+    color: white;
+}
 
 .page-input {
     margin: 0 10px;
@@ -205,6 +206,6 @@ span {
     cursor: pointer;
 }
 
-    .go-btn:hover {
-        background-color: #0056b3;
-    }
+.go-btn:hover {
+    background-color: #0056b3;
+}
