@@ -38,14 +38,6 @@
     }
 </div>
 
-
-
-
-@* 
-    Пока заглушка
- *@
-
-
 <div class="pagination">
     @for (int i = 1; i <= players.Count/10 + 1; i++)
     {
@@ -53,16 +45,19 @@
         {
             <span class="page-link active">@i</span>
         }
-        else if (i == 1 || i == players.Count / 10)
+        else if (i == 1 || i >= players.Count / 10 || (i >= curentPage - 3 && i <= curentPage + 3))
         {
             <form asp-controller="ViewPlayers" asp-action="GoToThePage" asp-route-page="@i">
                 <input type="hidden" name="pageNumber" value="@i" />
                 <button type="submit" class="page-link">@i</button>
             </form>
         }
+        else
+        {
+            <p>.</p>
+        }
     }
-    <input class="page-input" type="number" id="pageNumber" min="1" max="2" />
-    <button class="go-btn" onclick="goToPage(document.getElementById('pageNumber').value)">Перейти</button>
+
 </div>
 
 

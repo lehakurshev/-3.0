@@ -1,41 +1,4 @@
-CREATE DATABASE "football players";
-
--- Переключение на созданную БД
-\c "football players"
-
-
-CREATE TABLE players (
-    id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name VARCHAR(1000) NOT NULL,
-    surname VARCHAR(1000) NOT NULL,
-    team_name VARCHAR(1000),
-    gender VARCHAR(50) NOT NULL,
-    date_of_birth DATE NOT NULL,
-    country VARCHAR(50) NOT NULL
-);
-
-
-INSERT INTO players (name, surname, team_name, gender, date_of_birth, country)
-VALUES ('Mario', 'Balotelli', 'Brescia', 'Man', '1990-08-12', 'Italy'),
-       ('Leonardo', 'Bonucci', 'Milan', 'Man', '1987-05-01', 'Italy'),
-       ('Fabio', 'Cannavaro', 'Guangzhou Evergrande', 'Man', '1973-09-13', 'Italy'),
-       ('Paolo', 'Maldini', 'Milan', 'Man', '1968-06-26', 'Italy'),
-       ('Landon', 'Donovan', 'Los Angeles Galaxy', 'Man', '1982-03-04', 'USA'),
-       ('Clint', 'Dempsey', 'Seattle Sounders', 'Man', '1983-03-09', 'USA'),
-       ('Christian', 'Pulisic', 'Chelsea', 'Man', '1998-09-18', 'USA'),
-       ('Michael', 'Bradley', 'Toronto FC', 'Man', '1987-07-31', 'USA'),
-       ('Jozy', 'Altidore', 'Toronto FC', 'Man', '1989-11-06', 'USA'),
-       ('Matt', 'Miazga', 'Alavés', 'Man', '1995-07-19', 'USA'),
-       ('Tim', 'Howard', 'Memphis 901 FC', 'Man', '1979-03-06', 'USA'),
-       ('Christian', 'Vieri', 'Retired', 'Man', '1973-07-12', 'Italy'),
-       ('Andrea', 'Belotti', 'Torino', 'Man', '1993-12-20', 'Italy'),
-       ('Federico', 'Chiesa', 'Juventus', 'Man', '1997-10-25', 'Italy'),
-       ('Sebastian', 'Giovinco', 'Al-Hilal', 'Man', '1987-01-26', 'Italy'),
-       ('Victor', 'Osimhen', 'Napoli', 'Man', '1998-12-29', 'Italy');
-
-
-
-INSERT INTO players (country,TeamName,name,surname,date_of_birth,gender)
+INSERT INTO players (Country,TeamName,Name,Surname,Random birthdate,Gender)
 VALUES ('USA','Leeds United','Brenden','Aaronson','2000-04-16','Man'),
 ('USA','Eint Frankfurt','Paxten','Aaronson','2003-07-21','Man'),
 ('Italy','Cremonese','Christian','Acella','2002-04-15','Man'),
@@ -102,14 +65,14 @@ VALUES ('USA','Leeds United','Brenden','Aaronson','2000-04-16','Man'),
 ('Italy','Hellas Verona','Alessandro','Cortinovis','2001-11-16','Man'),
 ('Italy','Monza','Alessio','Cragno','1994-12-24','Man'),
 ('Italy','Roma','Bryan','Cristante','1995-01-17','Man'),
-('Italy','Monza','Marco','D`Alessandro','1991-07-31','Man'),
-('Italy','Inter','Danilo','D`Ambrosio','1988-04-12','Man'),
-('Italy','Sassuolo','Luca','D`Andrea','2004-12-28','Man'),
+('Italy','Monza','Marco','D'Alessandro','1991-07-31','Man'),
+('Italy','Inter','Danilo','D'Ambrosio','1988-04-12','Man'),
+('Italy','Sassuolo','Luca','D'Andrea','2004-12-28','Man'),
 ('Italy','Inter','Matteo','Darmian','1989-08-21','Man'),
 ('Italy','Sampdoria','Manuel','De Luca','1998-10-25','Man'),
 ('Italy','Juventus','Mattia','De Sciglio','1992-02-09','Man'),
 ('Italy','Bologna','Lorenzo','De Silvestri','1988-02-28','Man'),
-('Italy','Empoli','Duccio','Degl`Innocenti','2003-08-27','Man'),
+('Italy','Empoli','Duccio','Degl'Innocenti','2003-08-27','Man'),
 ('Italy','Hellas Verona','Fabio','Depaoli','1997-06-18','Man'),
 ('Italy','Sampdoria','Fabio','Depaoli','1997-09-03','Man'),
 ('USA','Milan','Sergiño','Dest','2000-07-11','Man'),
@@ -234,7 +197,7 @@ VALUES ('USA','Leeds United','Brenden','Aaronson','2000-04-16','Man'),
 ('Italy','Spezia','Jacopo','Sala','1991-10-31','Man'),
 ('Italy','Bologna','Nicola','Sansone','1991-02-09','Man'),
 ('Italy','Fiorentina','Riccardo','Saponara','1991-01-15','Man'),
-('USA','M`Gladbach','Joe','Scally','2002-12-14','Man'),
+('USA','M'Gladbach','Joe','Scally','2002-12-14','Man'),
 ('Italy','Atalanta','Giorgio','Scalvini','2003-07-03','Man'),
 ('Italy','West Ham','Gianluca','Scamacca','1999-06-11','Man'),
 ('Italy','Torino','Jacopo','Segre','1997-11-27','Man'),
@@ -280,4 +243,3 @@ VALUES ('USA','Leeds United','Brenden','Aaronson','2000-04-16','Man'),
 ('Italy','Napoli','Alessio','Zerbin','1999-09-26','Man'),
 ('Italy','Atalanta','Nadir','Zortea','1999-04-19','Man'),
 ('Italy','Sassuolo','Nadir','Zortea','1999-09-02','Man')
-
